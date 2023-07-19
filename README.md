@@ -12,13 +12,14 @@ Preconditions: Open the Postman website: https://speeding-meadow-227188.postman.
 
 Steps to reproduce: 
 
-1. Click on "Workspaces", then "My Workspace"
-2. Click the "New" button
-3. Select "HTTP" request
-4. Select "Get" from droplist
-5. Copy base URL from Swagger website "https://petstore.swagger.io/"
-6. Add "v2/pet/2"
-7. Hit the "Send" button
+   1. Click on "Workspaces", then "My Workspace"
+   2. Click the "New" button
+   3. Select "HTTP" request
+   4. Select "Get" from droplist
+   5. Copy base URL from Swagger website "https://petstore.swagger.io/"
+   6. Add "v2/pet/2"
+   7. Hit the "Send" button
+
 
    Expected results: All the details about the pet are displayed
 
@@ -44,6 +45,8 @@ Steps to reproduce:
 7. Hit the "Send" button
 
 Expected results: The message "For input string: \"dsafas/" with status 404 is displayed in the Body textbox
+
+Environment : Google Chrome
 
 ![test failed](https://github.com/dicacristian/API-Testing/assets/85904271/904abc62-fba6-45a8-b5b0-63281212da6a)
 
@@ -75,6 +78,9 @@ Steps to reproduce :
 Expected results: The new pet has been successfully added with Status: 200 OK and all the details are displayed in the Body textbox.
 
 Test data: id: 1 & name: "Rex" 
+
+Environment : Google Chrome
+
 
 ![post method](https://github.com/dicacristian/API-Testing/assets/85904271/50631e2d-8baa-4e22-8eb3-804baf26db45)
 
