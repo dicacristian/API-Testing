@@ -4,55 +4,6 @@ Below some test cases I made for API Testing
 
 _____________________________________________________________________________________________________________________________________________
 
-Title: Find an API
-
-Description: Find a pet by ID after the pet has been created
-
-Preconditions: Open the Postman website: https://speeding-meadow-227188.postman.co & log in with your username and password
-
-Steps to reproduce: 
-
-   1. Click on "Workspaces", then "My Workspace"
-   2. Click the "New" button
-   3. Select "HTTP" request
-   4. Select "Get" from droplist
-   5. Copy base URL from Swagger website "https://petstore.swagger.io/"
-   6. Add "v2/pet/2"
-   7. Hit the "Send" button
-
-
-   Expected results: All the details about the pet are displayed
-
-   Environment : Google Chrome
-
-   ![get method](https://github.com/dicacristian/API-Testing/assets/85904271/a56036da-6bf7-4201-bb11-b7c94af276f9)
-
-
-
-_____________________________________________________________________________________________________________________________________________
-
-Title : Including an API that does not exist 
-
-Description : Test the "Get" method with letters instead of number. 
-Steps to reproduce: 
-
-1. Click on "Workspaces", then "My Workspace"
-2. Click the "New" button
-3. Select "HTTP" request
-4. Select "Get" from droplist
-5. Copy base URL from Swagger website "https://petstore.swagger.io/"
-6. Add "v2/pet/dsafas"
-7. Hit the "Send" button
-
-Expected results: The message "For input string: \"dsafas/" with status 404 is displayed in the Body textbox
-
-Environment : Google Chrome
-
-![test failed](https://github.com/dicacristian/API-Testing/assets/85904271/904abc62-fba6-45a8-b5b0-63281212da6a)
-
-
-_____________________________________________________________________________________________________________________________________________
-
 Title : Create an API 
 
 Description : Add a new pet to the store 
@@ -61,7 +12,7 @@ Preconditions: Open the Postman website: https://speeding-meadow-227188.postman.
 
 Steps to reproduce : 
 
-1. Click on "Workspaces", then ""My Workspace"
+1. Click on "Workspaces", then "My Workspace"
 2. Click the "New" button
 3. Select "HTTP" request
 4. Select "POST" from droplist
@@ -83,6 +34,29 @@ Environment : Google Chrome
 
 
 ![post method](https://github.com/dicacristian/API-Testing/assets/85904271/50631e2d-8baa-4e22-8eb3-804baf26db45)
+_____________________________________________________________________________________________________________________________________________
+
+Title : Update an API 
+
+Description: Update an existing pet 
+
+Preconditions: Open the Postman website: https://speeding-meadow-227188.postman.co & log in with your username and password  
+
+Steps to reproduce : 
+
+1. Click on "Workspaces", then "My Workspace"
+2. Click the "New" button
+3. Select "HTTP" request
+4. Select "PUT" from droplist
+5. Add https://petstore.swagger.io/v2/pet into requested URL textbox
+6. Go to https://petstore.swagger.io/#/pet/updatePet and copy the required body
+7. Paste on Postman the copied text in Body/raw/json
+8. Update the "name" with "Tommy" and ID with "20"
+9. Click the "Send" button
+
+Expected results: The name and ID field has changed successfully with those modified
+
+Environment : Google Chrome
 
 
 _____________________________________________________________________________________________________________________________________________
