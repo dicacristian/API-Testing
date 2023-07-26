@@ -57,15 +57,34 @@ Steps to reproduce :
 Expected results: The name and ID field has changed successfully with those modified
 
 Environment : Google Chrome
+![image](https://github.com/dicacristian/API-Testing/assets/85904271/a19ec52c-b904-42c0-b7fb-f9a2a1e4302f)
 
 
 _____________________________________________________________________________________________________________________________________________
 
+Title : Delete an existing API 
+
+Preconditions: Open the Postman website: https://speeding-meadow-227188.postman.co & log in with your username and password  
+
+Steps to reproduce : 
+
+1. Click on "Workspaces", then "My Workspace"
+2. Click the "New" button
+3. Select "HTTP" request
+4. Select "Delete" from droplist
+5. Copy "https://reqres.in/api/users/2" into  requested URL textbox
+6. Click the "Send" button
+
+Expected results : The elements deleted successfully 
+
+Environment : Google Chrome
 
 
+![delete api](https://github.com/dicacristian/API-Testing/assets/85904271/5c879f30-9b02-47ac-85c1-cc1a792f7741)
 
+Source : https://reqres.in/
 
-
+![deleted api reqres](https://github.com/dicacristian/API-Testing/assets/85904271/3934544e-786c-4216-a78b-bffea07ba450)
 
    
 
